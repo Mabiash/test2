@@ -523,7 +523,7 @@ section:nth-child(2) {
 
 .abt-information .personal-info .api-development .fa-solid {
   height: 55px;
-  aspect-ratio: 1;
+  width: 55px;
   font-size: 18px;
   color: #00ffff93;
   display: flex;
@@ -590,7 +590,8 @@ section:nth-child(2) {
 
 /* Define your variables if needed */
 :root {
-  --sm-fontSize: 16px; /* Example variable */
+  --sm-fontSize: 16px;
+  /* Example variable */
 }
 
 /* .section */
@@ -598,7 +599,8 @@ section:nth-child(2) {
   height: 100%;
   z-index: 1;
   /* Define your background color */
-  background-color: /* Your background color */ ;
+  background-color:
+        /* Your background color */ ;
   width: 50%;
 }
 
@@ -618,7 +620,8 @@ section:nth-child(2) {
   text-transform: uppercase;
   color: rgb(192, 192, 192);
   /* Define your background color */
-  background-color: /* Your background color */ ;
+  background-color:
+        /* Your background color */ ;
   letter-spacing: 1.5px;
   line-height: 3rem;
   font-weight: 700;
@@ -627,7 +630,6 @@ section:nth-child(2) {
 
 /* .section .cta-btn-con */
 .section .cta-btn-con {
-  font-size: var(--sm-fontSize) !important; /* Use your defined variable */
   min-width: 18rem;
   width: 90%;
   max-width: 24rem;
@@ -637,16 +639,21 @@ section:nth-child(2) {
 }
 
 /* .section .cta-btn-con button */
-.section .cta-btn-con button {
+.cta-btn-con button {
   border-radius: 3px;
   background: linear-gradient(315deg, #1c2535, #212c3f);
   box-shadow: -5px -5px 13px #0d1118, 5px 5px 13px #31415e;
   color: #00ffff93;
+
   border: 0;
+  font-size: 14px;
   width: 47%;
   font-weight: 600;
   padding: 14px 0;
-  font-size: var(--sm-fontSize) !important; /* Use your defined variable */
+}
+.cta-btn-con .fa-solid {
+  font-size: 14.78px;
+  margin-left: 5px;
 }
 
 .imgs-hero {
@@ -663,10 +670,11 @@ section:nth-child(2) {
 }
 
 .social-media-con a {
-  text-decoration: 0;
+  text-decoration: none;
 
   height: 55px;
-  aspect-ratio: 1;
+
+  width: 55px;
   color: #00ffff93;
 
   border-radius: 50%;
@@ -976,39 +984,38 @@ section:nth-child(2) {
     align-items: center;
     text-align: center;
   }
-  
+
   .section .headline {
     display: flex;
     align-items: center;
   }
-  
+
   .section .headline h1,
   .section .headline h2,
   .section .headline h3 {
     text-align: center;
   }
-  
+
   .section .headline h3 {
     width: 80%;
     margin-bottom: 0.5rem;
   }
-  
 
   .abt-information {
     margin-top: 2rem;
   }
-  
+
   .abt-information h3 {
     color: #00ffff93;
     font-size: 25px;
     font-weight: 700;
     letter-spacing: 0.7px;
   }
-  
+
   .abt-information h2 {
     min-width: 30ch;
   }
-  
+
   .abt-information .intro-container {
     display: flex;
     flex-direction: column;
@@ -1016,25 +1023,25 @@ section:nth-child(2) {
     width: 100%;
     align-items: center;
   }
-  
+
   .abt-information .intro-container .personal-info {
     height: auto;
     width: 100%;
     max-width: 60ch;
     border-radius: 0px;
   }
-  
+
   .abt-information .intro-container .personal-info .api-development {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  
+
   .abt-information .intro-container .personal-info .api-development .fa-solid {
     margin-bottom: 1.5rem;
   }
-  
+
   .abt-information .intro-container .personal-info .api-development .des {
     width: 90%;
     margin: 0;
@@ -1044,13 +1051,13 @@ section:nth-child(2) {
     justify-content: center;
     text-align: center;
   }
-  
+
   .abt-information .intro-container .personal-info .api-development .des h1 {
     font-size: 20px;
     color: rgb(192, 192, 192);
     width: 100%;
   }
-  
+
   .abt-information .intro-container .personal-info .api-development .des p {
     max-width: 45ch;
     text-align: center;
@@ -1059,5 +1066,9 @@ section:nth-child(2) {
     line-height: 1.5rem;
     letter-spacing: 0.8px;
   }
-  
+
+  .abt-imges{
+    width: 80% !important;
+    margin-top: 3rem;
+  }
 }
